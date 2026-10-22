@@ -1,3 +1,4 @@
+```dart
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Latihan Mental',
+      title: 'Aplikasi Mahasiswa KALI',
       debugShowCheckedModeBanner: false,
       home: const MyHomePage(),
     );
@@ -28,7 +29,7 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 210, 182, 97),
         leading: const Icon(Icons.menu),
-        title: const Text('Latihan Scaffold'),
+        title: const Text('Dashboard Mahasiswa'),
         centerTitle: true,
         actions: const [
           Icon(Icons.book),
@@ -49,7 +50,7 @@ class MyHomePage extends StatelessWidget {
             SizedBox(height: 20),
 
             Text(
-              'DEM BRO',
+              'Ahmad Ilyas',
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
@@ -59,7 +60,7 @@ class MyHomePage extends StatelessWidget {
             SizedBox(height: 10),
 
             Text(
-              'Selamat Belajar Flutter!',
+              'NIM: 1125170130',
               style: TextStyle(fontSize: 16),
             ),
           ],
@@ -68,3 +69,4 @@ class MyHomePage extends StatelessWidget {
     );
   }
 }
+```
