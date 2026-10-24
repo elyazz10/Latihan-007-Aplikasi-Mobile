@@ -1,4 +1,3 @@
-```dart
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,7 +23,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
 
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 210, 182, 97),
@@ -54,6 +53,7 @@ class MyHomePage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
+                color: Colors.white,
               ),
             ),
 
@@ -61,7 +61,8 @@ class MyHomePage extends StatelessWidget {
 
             Text(
               'NIM: 1125170130',
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(fontSize: 16,
+              color: Colors.white,)
             ),
           ],
         ),
@@ -69,4 +70,4 @@ class MyHomePage extends StatelessWidget {
     );
   }
 }
-```
+
