@@ -28,13 +28,22 @@ class MyHomePage extends StatelessWidget {
       backgroundColor: Colors.black,
 
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 210, 182, 97),
+        backgroundColor: Colors.amber,
         leading: const Icon(Icons.menu),
         title: const Text('Dashboard Mahasiswa'),
         centerTitle: true,
-        actions: const [
-          Icon(Icons.book),
-          SizedBox(width: 15),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ProfilePage(),
+                ),
+              );
+            },
+            icon: const Icon(Icons.book),
+          ),
         ],
       ),
 
@@ -45,31 +54,47 @@ class MyHomePage extends StatelessWidget {
             Icon(
               Icons.school,
               size: 80,
-              color: Color.fromARGB(255, 210, 182, 97),
+              color: Colors.amber,
             ),
-
             SizedBox(height: 20),
-
             Text(
               'Ahmad Ilyas',
               style: TextStyle(
                 fontSize: 28,
-                fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
             ),
-
             SizedBox(height: 10),
-
             Text(
               'NIM: 1125170130',
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.white,
-              ),
+              style: TextStyle(color: Colors.white),
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Profile Page'),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Icon(Icons.arrow_back),
+          ),
+        ],
+      ),
+      body: const Center(
+        child: Text('Ahmad Ilyas'),
       ),
     );
   }
