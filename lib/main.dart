@@ -94,7 +94,7 @@ class ProfilePage extends StatelessWidget {
         ],
       ),
       body: const Center(
-        child: Text('Ahmad Ilyas'),
+        child: Text('ILYAS'),
       ),
     );
   }
